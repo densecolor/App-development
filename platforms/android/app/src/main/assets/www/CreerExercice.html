@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jean-David Coaching</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+        <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+        <meta name="author" content="FREEHTML5.CO" />
+
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+
+
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Superfish -->
+        <link rel="stylesheet" href="css/superfish.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body onload="l_catexercices()">
+        <div id="fh5co-wrapper">
+            <div id="fh5co-page">
+                <div id="fh5co-header">
+                    <header id="fh5co-header-section">
+                        <div class="container">
+                            <div class="nav-header">
+                                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                                <h1 id="fh5co-logo"><a href="index.html"><span>Jean David</span> Coaching</a></h1>
+                                <!-- START #fh5co-menu-wrap -->
+                                <nav id="fh5co-menu-wrap" role="navigation">
+                                    <ul class="sf-menu" id="fh5co-primary-menu">
+                                        <li >
+                                            <a href="connexion.html" >Connexion</a>
+
+                                        </li>
+                                        <li >
+                                            <a href="index.html">Accueil</a>
+                                        </li>
+                                        <li>
+                                            <a href="Clients.html">Clients</a>
+                                            <ul class="fh5co-sub-menu" style="display: none;">
+                                                <li>
+                                                    <a href="Clients.html">Liste des clients</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ValiderClient.html">Validation des inscriptions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="inscriptionEtape1.html">Ajouter un Client</a>
+                                                </li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="ListeProgrammes.html">Programmes</a>
+                                            <ul class="fh5co-sub-menu" style="display: none;">
+                                                <li>
+                                                    <a href="ListeProgrammes.html">Liste des programmes</a>
+                                                </li>
+                                                <li>
+                                                    <a href="CreerProgramme.html">Ajouter un programme</a>
+                                                </li>
+
+
+                                            </ul>
+                                        </li>
+                                       <li>
+                                            <a href="trainer.html">Séances</a>
+                                            <ul class="fh5co-sub-menu" style="display: none;">
+                                               <li>
+                                                    <a href="trainer.html">Liste des séances</a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="CreerSeanceType.html">Ajouter une Séance type</a>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="active">
+                                            <a href="Exercices.html">Exercices</a>
+                                            <ul class="fh5co-sub-menu" style="display: none;">
+                                                <li>
+                                                    <a href="Exercices.html">Liste des exercices</a>
+                                                </li>
+                                                <li>
+                                                    <a href="CreerExercice.html">Ajouter un exercice</a>
+                                                </li>
+
+
+                                            </ul>
+                                        <li><a href="contact.html">Contact</a></li>
+
+
+                                        <li class="active"><a href="#"><i class="glyphicon glyphicon-bell"></i><span class="badge badge-warning">4</span></a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>		
+                </div>
+                <!-- end:fh5co-header -->
+
+                <div id="fh5co-programs-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="alert alert-warning" id="alerteCreerExo" style="display:none;"></div>
+
+                                <div class="heading-section  animate-box"></br>
+                                    <h2 class="text-center">Création d'un exercice type</h2>
+
+                                    <p>Veuillez remplir les champs</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="NomExercice">Nom de l'exercice</label>
+                                            <input type="text" class="form-control" id="NomExercice"  placeholder="Veuillez renseigner le nom de l'exercice" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="selectionCategorie">Catégorie de l'exercice</label>
+                                            <Select class="form-control" id="selectionCategorie">
+
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="objExercice">Objectif</label>
+                                            <input required type="text" placeholder="Veuillez renseigner une objectif" class="form-control" id="objExercice">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="repetExercice">Nombre de répétitions</label>
+                                            <input required type="number" class="form-control" id="repetExercice"  placeholder="Veuillez renseigner le nombre de répétitions l'exercice">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tempsExercice">Durée de l'exercice(en secondes)</label>
+                                            <input  required type="number" class="form-control" id="tempsExercice"  placeholder="Veuillez renseigner la durée l'exercice">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tempsReposExercice">Durée de repos de l'exercice(en secondes)</label>
+                                            <input required type="number" class="form-control" id="tempsReposExercice"  placeholder="Veuillez renseigner la durée de repos l'exercice">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="lienVideo">Lien vidéo</label>
+                                            <input type="text" required placeholder="Veuillez ajouter un lien vers une vidéo" class="form-control" id="lienVideo">
+                                        </div>
+                                        
+                                        <button onclick="creer_exo()" class="btn btn-primary">Créer</button>
+
+                                    </form>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">A propos</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Mes Coordonnees</h3>
+							<ul class="contact-info">
+								<li><i class="icon-map-marker"></i>Toulouse Metropole</li>
+								<li><i class="icon-phone"></i>07-83-32-62-27</li>
+								<li><i class="icon-envelope"></i><a href="#">jeandavidcoaching@gmail.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Contacte moi</h3>
+							<form class="contact-form">
+								<div class="form-group">
+									<label for="name" class="sr-only">Nom</label>
+									<input type="name" class="form-control" id="name" placeholder="Nom">
+								</div>
+								<div class="form-group">
+									<label for="email" class="sr-only">Email</label>
+									<input type="email" class="form-control" id="email" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<label for="message" class="sr-only">Message</label>
+									<textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Envoyer Message">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+            </div>
+            <!-- END fh5co-page -->
+
+        </div>
+        <!-- END fh5co-wrapper -->
+
+
+        <script src="js/fctxml.js"></script>
+
+        <!-- jQuery -->
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Stellar -->
+        <script src="js/jquery.stellar.min.js"></script>
+        <!-- Superfish -->
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/superfish.js"></script>
+
+        <!-- Main JS (Do not remove) -->
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+

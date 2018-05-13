@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jean-David Coaching</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+        <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+        <meta name="author" content="FREEHTML5.CO" />
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+        
+        <script type="text/JavaScript" src="js/fctxml.js"></script>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+
+
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Superfish -->
+        <link rel="stylesheet" href="css/superfish.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body onload = "affichButDeco(), ExerciceReal(0)">
+        <div id="fh5co-wrapper">
+            <div id="fh5co-page">
+                <div id="fh5co-header">
+                    <header id="fh5co-header-section">
+                        <div class="container">
+                            <div class="nav-header">
+                                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                                <h1 id="fh5co-logo"><a href="menuClient.html"><span>Jean David</span> Coaching</a></h1>
+                                <!-- START #fh5co-menu-wrap -->
+                                <nav id="fh5co-menu-wrap" role="navigation">
+                                    <ul class="sf-menu" id="fh5co-primary-menu">
+
+                                        <li class="active">
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="profil.html">Profil</a>
+                                            <ul class="fh5co-sub-menu" style="display: none;">
+                                                <li>
+                                                    <a href="modifierProfil.html">Modifier son profil</a>
+                                                </li>
+                                                <li>
+                                                    <a href="complInscri.html">Completer son inscription</a>
+                                                </li>
+                                                <li>
+                                                    <a href="mensuration.html">Mensurations</a>
+                                                </li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="schedule.html">Progression</a>
+                                            <ul class="fh5co-sub-menu" style="display: none;">
+                                                <li>
+                                                    <a href="ListeProgrammes.html">Anciens bilans</a>
+                                                </li>
+                                                <li>
+                                                    <a href="CreerProgramme.html">Historique</a>
+                                                </li>
+
+
+                                            </ul>
+                                        </li> 
+
+                                        <script type="text/javascript">
+                                            affichInfoCo();
+                                        </script>
+
+
+                                        <li><a href="contact.html">Contacter Jean David</a></li>
+                                        <li> 
+
+                                        <li class="active"><a href="#"><i class="glyphicon glyphicon-bell"></i><span class="badge badge-warning">4</span></a></li>
+
+                                    </ul>
+
+                                </nav>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" id ="affichButDeco" onclick ="deconnexion()" style="display: none; float: right ;">Deconnexion</button>
+
+                    </header>		
+                </div>
+
+
+                <!-- end:fh5co-header -->
+
+                <div class="fh5co-hero">
+                    <div id = fh5co-overlay>
+                    </div>
+                    <div class="fh5co-cover" data-stellar-background-ratio="0.5">
+                        <div class="desc animate-box">
+                            <div id = "container" class="container">
+
+                                <div class="row">                                   
+                                    <div id ="col-md-7" class="col-md-7">
+                                        <div id = "echauffement">
+                                            <h1>Echauffement! </h1>
+
+                                            <p> La liste des echauffement.... Repeter tous les echauffements une fois </p>
+                                        </div>
+
+                                        <h2>Réaliser l'exercice : </h2>
+
+                                        <Table id = "tableau" style = "width: 60%;">
+
+                                            <tr><td  style = "width: 60%;" id = "nomExo"> </td>
+                                                <td><p> Nombre de répétitions réalisées </p></td></tr>
+
+                                            <tr><td  style = "width: 60%;"><span id = "DescripExo"> </span></td>
+                                                <td ><span id="repetitionEnCours"> </span> </td></tr>
+
+                                            <tr><td  style = "width: 60%;"><span id = "tpsrepos"> </span></td>
+                                                <td><div id = "nbRepetition"> </div> </td></tr>
+
+                                            <tr><td  style = "width: 60%;"><span id = "nbSerie"> </span></td>
+                                                <td><div class="form-group" id = "resultat" style="display: none; "> 
+                                                        <label for="difficulte">Difficulté de l'exercice</label>
+                                                        <select id = "difficulte" name="listDifficulte"  class="form-control">
+                                                            <option>Aucune difficulté</option>
+                                                            <option>Facile</option>
+                                                            <option>Normal</option>
+                                                            <option>Compliqué</option>
+                                                            <option>Irréalisable</option>
+                                                        </select> </div> </td></tr>
+
+                                            <tr><td style = "width: 60%;"> <span id = "temps"> </span></td>
+                                                <td><span id = "finalisationExo"> </span> </td></tr>
+                                            <tr><td style = "width: 60%;"> <span id = "serie"> </span></td>
+                                                <td> </td></tr>
+                                        </table>
+                                    
+                                    <div id ="col-md-5" class="col-md-5">
+                                        <button class="btn btn-success btn-xs" onclick="startChr()">Start</button>
+                                        <button class="btn btn-warning btn-xs" onclick="stopChr()">Stop</button>
+                                        <button class="btn btn-info btn-xs" onclick="resetChr()">Reset</button>
+                                        <div id="showtm" style="font-size:28px; font-weight:800; color:black; ">0:0</div>
+
+                                        <script type="text/javascript"><!--
+                                        // chronometer / stopwatch JS script - coursesweb.net
+
+                                            // Here set the minutes, seconds, and tenths-of-second when you want the chronometer to stop
+                                            // If all these values are set to 0, the chronometer not stop automatically
+                                            var stmints = 0;
+                                            var stseconds = 0;
+                                            var stzecsec = 0;
+
+                                            // function to be executed when the chronometer stops
+                                            function toAutoStop() {
+                                                alert('Your life goes on');
+                                            }
+
+                                            // the initial tenths-of-second, seconds, and minutes
+                                            var zecsec = 0;
+                                            var seconds = 0;
+                                            var mints = 0;
+
+                                            var startchron = 0;
+
+                                            function chronometer() {
+                                                if (startchron == 1) {
+                                                    zecsec += 1;       // set tenths of a second
+
+                                                    // set seconds
+                                                    if (zecsec > 9) {
+                                                        zecsec = 0;
+                                                        seconds += 1;
+                                                    }
+
+                                                    // set minutes
+                                                    if (seconds > 59) {
+                                                        seconds = 0;
+                                                        mints += 1;
+                                                    }
+
+                                                    // adds data in #showtm
+                                                    document.getElementById('showtm').innerHTML = mints + ' : ' + seconds + '<sub>' + zecsec + '</sub>';
+
+                                                    // if the chronometer reaches to the values for stop, calls whenChrStop(), else, auto-calls chronometer()
+                                                    if (zecsec == stzecsec && seconds == stseconds && mints == stmints)
+                                                        toAutoStop();
+                                                    else
+                                                        setTimeout("chronometer()", 100);
+                                                }
+                                            }
+
+                                            function startChr() {
+                                                startchron = 1;
+                                                chronometer();
+                                            }      // starts the chronometer
+                                            function stopChr() {
+                                                startchron = 0;
+                                            }                      // stops the chronometer
+                                            function resetChr() {
+                                                zecsec = 0;
+                                                seconds = 0;
+                                                mints = 0;
+                                                startchron = 0;
+                                                document.getElementById('showtm').innerHTML = mints + ' : ' + seconds + '<sub>' + zecsec + '</sub>';
+                                            }
+
+
+--></script>
+                                        <iframe id="video" width="100%" height="300"> </iframe>
+                                        </br>
+                                        </br></br>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <!-- fh5co-blog-section -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END fh5co-page -->
+
+            </div>
+            <!-- END fh5co-wrapper -->
+
+
+
+            <!-- jQuery -->
+            <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+            <script src="js/jquery.min.js"></script>
+            <!-- jQuery Easing -->
+            <script src="js/jquery.easing.1.3.js"></script>
+            <!-- Bootstrap -->
+            <script src="js/bootstrap.min.js"></script>
+            <!-- Waypoints -->
+            <script src="js/jquery.waypoints.min.js"></script>
+            <!-- Stellar -->
+            <script src="js/jquery.stellar.min.js"></script>
+            <!-- Superfish -->
+            <script src="js/hoverIntent.js"></script>
+            <script src="js/superfish.js"></script>
+
+            <!-- Main JS (Do not remove) -->
+            <script src="js/main.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
+</html>
